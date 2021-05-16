@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Profile from './Profile/Profile.js';
+import PROFILEPHOTO from './Profile/imgpro.jpg';
 
 function App() {
+  const handleName=name=>alert(name);
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Profile fullName="Dhekra Nsir" bio="I am a 29-year-old married woman. I live in Dar Chaabane,Nabeul,Tunisia.I studied Agronomy studies at ISA Sousse where I graduated as an engineer. I have decided to switch to a different career path, namely web development.Hence, I have signed up to the GoMyCode fullstack program in order to acquire a deeper understanding of this field of study."
+profession="Web Developer" handleName={handleName}><img src={PROFILEPHOTO} alt=''width= '150 px' height='150px'/></Profile>
+      
     </div>
   );
 }
